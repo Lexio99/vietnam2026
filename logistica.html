@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Logística - Expedición Vietnam y Camboya 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            overflow: hidden;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #0ea5e9; /* sky-500 */
+        }
+        .sub-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #f1f5f9;
+            font-weight: 600;
+        }
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="text-gray-900 antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">Expedición 2026</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 font-medium">Inicio</a>
+                <a href="itinerario.html" class="nav-link text-gray-600 font-medium">Itinerario</a>
+                <a href="destinos.html" class="nav-link text-gray-600 font-medium">Destinos</a>
+                <a href="presupuesto.html" class="nav-link text-gray-600 font-medium">Presupuesto</a>
+                <a href="cultura.html" class="nav-link text-gray-600 font-medium">Guía Cultural</a>
+                <a href="logistica.html" class="text-sky-600 font-bold">Logística</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 border-t">
+             <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
+             <a href="itinerario.html" class="block py-2 text-gray-600">Itinerario</a>
+             <a href="destinos.html" class="block py-2 text-gray-600">Destinos</a>
+             <a href="presupuesto.html" class="block py-2 text-gray-600">Presupuesto</a>
+             <a href="cultura.html" class="block py-2 text-gray-600">Guía Cultural</a>
+             <a href="logistica.html" class="block py-2 text-sky-600 font-semibold">Logística</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-16">
+        <h1 class="section-title text-center mb-4">Guía de Logística</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">La planificación es la clave del éxito. Aquí encontrarás toda la información práctica sobre transportes, alojamientos, visados y consejos esenciales para un viaje fluido y sin contratiempos.</p>
+
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Transporte: Moviéndose por Vietnam y Camboya</h2>
+            <p class="text-gray-600 mb-6">Para un viajero sin vehículo propio, dominar el sistema de transporte es fundamental. Esta es la hoja de ruta de todos los traslados clave, optimizada para la eficiencia y la experiencia.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Origen → Destino</th>
+                            <th>Medio de Transporte</th>
+                            <th>Compañía/Servicio Sugerido</th>
+                            <th>Duración Aprox.</th>
+                            <th>Precio Estimado</th>
+                            <th>Notas y Referencias</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td>Hanoi → Lao Cai (Sapa)</td>
+                            <td>Tren nocturno</td>
+                            <td>Vietnam Railways / Sapaly Express</td>
+                            <td>8-9 horas</td>
+                            <td>~€30</td>
+                            <td>Opción clásica y cómoda. Reservar litera en cabina de 4.</td>
+                        </tr>
+                        <tr>
+                            <td>Sapa → Ninh Binh</td>
+                            <td>Autobús-cama nocturno</td>
+                            <td>Phuc Xuyen, Ket Doan Travel</td>
+                            <td>9-10 horas</td>
+                            <td>~€22</td>
+                            <td>Ruta directa que evita volver a Hanoi. Imprescindible reservar.</td>
+                        </tr>
+                        <tr>
+                            <td>Ninh Binh → Hue</td>
+                            <td>Tren nocturno</td>
+                            <td>Vietnam Railways (SE3, SE19)</td>
+                            <td>10-12 horas</td>
+                            <td>~€35</td>
+                            <td>Reservar litera en cabina de 4 para mayor comodidad.</td>
+                        </tr>
+                        <tr>
+                            <td>Hue → Da Nang</td>
+                            <td>Tren diurno</td>
+                            <td>Vietnam Railways</td>
+                            <td>2.5-3 horas</td>
+                            <td>~€7</td>
+                            <td>Ruta escénica por el Paso de Hai Van. Sentarse a la derecha.</td>
+                        </tr>
+                        <tr>
+                            <td>Da Nang → Hoi An</td>
+                            <td>Autobús público / Grab</td>
+                            <td>Bus local #02 / App Grab</td>
+                            <td>45-60 min</td>
+                            <td>~€1.5 (bus) / ~€15 (Grab)</td>
+                            <td>El autobús local es la opción más económica.</td>
+                        </tr>
+                        <tr>
+                            <td>Da Nang → HCMC</td>
+                            <td>Vuelo doméstico</td>
+                            <td>Vietjet Air, Vietnam Airlines</td>
+                            <td>1.5 horas</td>
+                            <td>~€45-100</td>
+                            <td>La forma más eficiente. Reservar con antelación post-Tết.</td>
+                        </tr>
+                        <tr>
+                            <td>HCMC ↔ Delta Mekong</td>
+                            <td>Tour Organizado</td>
+                            <td>Múltiples operadores</td>
+                            <td>2 Días / 1 Noche</td>
+                            <td>~€55</td>
+                            <td>Elegir un tour que incluya noche en Can Tho para el mercado flotante.</td>
+                        </tr>
+                        <tr>
+                            <td>HCMC ↔ Siem Reap</td>
+                            <td>Autobús internacional</td>
+                            <td>Giant Ibis, Mekong Express</td>
+                            <td>13-14 horas</td>
+                            <td>~€44 (ida)</td>
+                            <td>Opción económica. El viaje incluye el cruce de frontera.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8 mb-16 bg-sky-50 border border-sky-200">
+            <h2 class="sub-section-title text-sky-900">Logística Avanzada para el Tết: Claves Prácticas</h2>
+            <p class="text-gray-600 mb-6">El Año Nuevo Lunar (17 de febrero de 2026) transforma el país. Ignorar su impacto logístico es el mayor error que un viajero puede cometer. Esta sección detalla las claves para navegarlo con éxito.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div><h3 class="font-bold text-lg mb-2">Reservas y Antelación</h3><p class="text-sm text-gray-700">La reserva de transportes de larga distancia (vuelos, trenes) debe hacerse con meses, no semanas, de antelación. La estrategia de este viaje es llegar a Hoi An antes del 15 de febrero y permanecer allí, convirtiendo un obstáculo en una inmersión cultural.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Finanzas y Efectivo</h3><p class="text-sm text-gray-700">Retira suficiente Dong (VND) en efectivo antes de que comiencen los días festivos principales. Muchos bancos cerrarán y los cajeros automáticos (ATMs) pueden quedarse sin fondos. Ten un extra para cubrir la posible inflación de precios en servicios.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Operatividad de Servicios</h3><p class="text-sm text-gray-700">Espera que muchos negocios familiares, restaurantes y mercados cierren. Sin embargo, en zonas turísticas como Hoi An, los servicios orientados al viajero suelen permanecer abiertos. Los museos y sitios gubernamentales probablemente cerrarán; los templos estarán llenos de vida.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Movilidad Local</h3><p class="text-sm text-gray-700">Dentro de las ciudades, la disponibilidad de taxis y Grab puede disminuir. En los centros de celebración (como el Casco Antiguo de Hoi An), espera cierres de calles al tráfico para dar paso a festivales y procesiones peatonales.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Etiqueta y Comportamiento</h3><p class="text-sm text-gray-700">La paciencia es tu mejor aliada. Saluda con un alegre "Chúc Mừng Năm Mới!". Evita el regateo agresivo; se considera de mala suerte para los vendedores en el inicio del año y es una práctica que se debe abordar con mayor sensibilidad.</p></div>
+                 <div><h3 class="font-bold text-lg mb-2">La Gran Migración</h3><p class="text-sm text-gray-700">Comprende que estás en medio de la mayor migración interna del año. Las grandes ciudades se vacían, mientras que los pueblos y los destinos turísticos se llenan. Planificar en torno a este fenómeno, en lugar de luchar contra él, es la clave del éxito.</p></div>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Seguro de Viaje Recomendado: IATI Mochilero</h2>
+            <p class="text-gray-600 mb-6">Para un viaje con actividades de aventura como este, un seguro de viaje no es una opción, es una necesidad. Tras un análisis exhaustivo de los riesgos específicos del itinerario, la póliza IATI Mochilero se identifica como la más adecuada por su equilibrio entre coberturas especializadas, claridad en sus condiciones y una excelente relación calidad-precio.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Coberturas Médicas Clave</h3>
+                    <ul class="list-disc list-inside text-sm space-y-2">
+                        <li><strong>Asistencia Médica:</strong> Límite de 600.000 €, suficiente para Vietnam y Camboya.</li>
+                        <li><strong>Gastos Odontológicos:</strong> Cubiertos hasta 350 €.</li>
+                        <li><strong>Evacuación y Repatriación:</strong> Cubiertas al 100%, garantizando el traslado y el regreso a casa en caso de emergencia grave.</li>
+                        <li><strong>Búsqueda y Salvamento:</strong> Incluye hasta 15.000 € para operaciones de rescate, una cobertura vital para actividades de trekking.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Coberturas de Aventura y Equipaje</h3>
+                    <ul class="list-disc list-inside text-sm space-y-2">
+                        <li><strong>Trekking:</strong> Cubierto de serie hasta una altitud de 5.400 metros.</li>
+                        <li><strong>Accidente en Moto (hasta 125cc):</strong> Cubre los gastos médicos y de hospitalización, pero no la indemnización por invalidez. Es obligatorio tener un carnet válido y usar casco.</li>
+                        <li><strong>Equipaje:</strong> Cobertura de hasta 1.500 € por robo.</li>
+                        <li><strong>Hurto:</strong> Incluye hasta 100 € por hurto (robo sin violencia), una cobertura rara y muy útil.</li>
+                        <li><strong>Responsabilidad Civil:</strong> Cubre hasta 60.000 € por daños a terceros.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Contacto y Procedimiento de Emergencia</h3>
+                    <p class="text-sm text-gray-700 mb-4"><strong>Crítico:</strong> Contacta siempre con la aseguradora ANTES de acudir a un centro médico, salvo emergencia vital.</p>
+                    <ul class="list-disc list-inside text-sm space-y-2">
+                        <li><strong>Teléfono (desde el extranjero):</strong> +34 93 485 77 35</li>
+                        <li><strong>Teléfono (desde España):</strong> 93 485 77 35</li>
+                        <li><strong>WhatsApp (solo primer contacto):</strong> 673 885 576</li>
+                        <li><strong>Documentación:</strong> Guarda siempre facturas, informes médicos y denuncias policiales para cualquier reclamación.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Checklist del Viajero: Consejos Prácticos Esenciales</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div><h3 class="font-bold text-lg mb-2">Visado</h3><p class="text-sm text-gray-700">Verifica los requisitos más recientes. La e-visa de Vietnam es la opción más común. Para Camboya, el visado se puede obtener a la llegada en la mayoría de cruces fronterizos (llevar USD en efectivo).</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Dinero</h3><p class="text-sm text-gray-700">La moneda es el Dong (VND). Los cajeros automáticos (ATM) están ampliamente disponibles en zonas turísticas. El regateo en mercados es común, pero debe hacerse con una sonrisa.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Seguridad</h3><p class="text-sm text-gray-700">Atención a los carteristas en zonas concurridas. Usa apps como Grab para evitar estafas con los precios de los taxis. Contrata un seguro de viaje completo que cubra emergencias médicas.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Salud</h3><p class="text-sm text-gray-700">Bebe solo agua embotellada. Ten precaución con la comida callejera (elige puestos con alta rotación). Lleva un botiquín básico con analgésicos, antidiarreico y repelente de insectos (DEET).</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Equipaje</h3><p class="text-sm text-gray-700">Empaca por capas. Ropa de abrigo para el norte en Enero/Febrero (Sapa, Hanoi) y ropa ligera de verano para el centro y sur. Incluye ropa modesta (que cubra hombros y rodillas) para visitar templos.</p></div>
+                <div><h3 class="font-bold text-lg mb-2">Etiqueta</h3><p class="text-sm text-gray-700">No toques la cabeza de la gente. Evita señalar con los pies. No alces la voz en público, ya que se considera una pérdida de "cara". Saluda con una leve inclinación de cabeza.</p></div>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8">
+            <h2 class="sub-section-title">Contactos de Emergencia</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2">Hospitales Internacionales</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li><strong>Hanoi:</strong> Hanoi French Hospital (+84 24 3577 1100)</li>
+                        <li><strong>Hanoi:</strong> Vinmec International Hospital (+84 24 3974 3556)</li>
+                        <li><strong>Da Nang:</strong> Family Medical Practice Da Nang (+84 511 358 2699)</li>
+                        <li><strong>HCMC:</strong> Franco-Vietnamese (FV) Hospital (+84 28 5411 3333)</li>
+                        <li><strong>HCMC:</strong> Raffles Medical International Clinic (+84 28 3822 7848)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2">Embajada de España en Hanoi</h3>
+                    <ul class="space-y-3 text-sm text-gray-700">
+                        <li><strong>Dirección:</strong> 4 Le Hong Phong Street, Ba Dinh District, Hanoi.</li>
+                        <li><strong>Teléfono:</strong> +84 24 3771 52 07 / 08 / 09</li>
+                        <li><strong>Emergencia Consular:</strong> +84 9 3633 31 30 (Solo para emergencias graves de ciudadanos españoles)</li>
+                        <li><strong>Email (Consular):</strong> emb.hanoi.vis@maec.es</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2024 Plan de Expedición Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

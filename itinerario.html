@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario Detallado - Expedición Vietnam y Camboya 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 1.125rem; /* Centrado en el círculo */
+            top: 1rem;
+            bottom: 1rem;
+            width: 3px;
+            background-color: #e2e8f0;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: attr(data-day);
+            position: absolute;
+            left: -0.875rem; /* Ajustado para el nuevo tamaño */
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 9999px;
+            background-color: #0ea5e9;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid #f8fafc;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="text-gray-900 antialiased">
+
+    <!-- Header y Navegación (sería igual en todas las páginas) -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">Expedición 2026</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="index.html" class="text-gray-600 font-medium hover:text-sky-600">Inicio</a>
+                <a href="itinerario.html" class="text-sky-600 font-bold">Itinerario</a>
+                <a href="destinos.html" class="text-gray-600 font-medium hover:text-sky-600">Destinos</a>
+                <a href="presupuesto.html" class="text-gray-600 font-medium hover:text-sky-600">Presupuesto</a>
+                <a href="cultura.html" class="text-gray-600 font-medium hover:text-sky-600">Guía Cultural</a>
+                <a href="logistica.html" class="text-gray-600 font-medium hover:text-sky-600">Logística</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 border-t">
+             <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
+             <a href="itinerario.html" class="block py-2 text-sky-600 font-semibold">Itinerario</a>
+             <a href="destinos.html" class="block py-2 text-gray-600">Destinos</a>
+             <a href="presupuesto.html" class="block py-2 text-gray-600">Presupuesto</a>
+             <a href="cultura.html" class="block py-2 text-gray-600">Guía Cultural</a>
+             <a href="logistica.html" class="block py-2 text-gray-600">Logística</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-16">
+        <h1 class="section-title text-center mb-4">Itinerario Detallado</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">Un recorrido de 35 días, día por día, con toda la información logística, notas del experto y costes asociados para una planificación perfecta.</p>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- SEMANA 1 -->
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-sky-500 pb-3 text-sky-700">Semana 1: El Norte Histórico y Místico</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-day="1"><h3 class="font-bold text-xl mb-2">Día 1: Llegada a Hanoi - Primera Inmersión</h3><p class="text-gray-600 mb-4">Aterrizaje en el Aeropuerto Noi Bai (HAN). Traslado al centro y check-in en el hostel. Primera toma de contacto con la ciudad: paseo por el Lago Hoan Kiem y cena de comida callejera en el Casco Antiguo.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Autobús Express 86 del aeropuerto al centro (económico) o Grab (más cómodo).</p><p>🏨 **Alojamiento:** Hostel en el Old Quarter para máxima inmersión.</p><p>🍜 **Gastronomía:** Cena de Bún Chả o Phở Cuốn. Probar el Cà Phê Trứng (café con huevo).</p><p>💡 **Nota del Experto:** No planificar demasiado para el primer día. El objetivo es aclimatarse al ritmo y al ruido de la ciudad. El jet lag puede ser un factor.</p><p>💰 **Coste Estimado:** 33.65€</p></div></div>
+                <div class="timeline-item" data-day="2"><h3 class="font-bold text-xl mb-2">Día 2: Hanoi - Historia y Cultura</h3><p class="text-gray-600 mb-4">Día completo dedicado a los sitios históricos clave: Complejo del Mausoleo de Ho Chi Minh, Pagoda del Pilar Único y Templo de la Literatura. Por la tarde, visita a la Prisión de Hoa Lo ("Hanoi Hilton").</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🏛️ **Actividades:** Visitas culturales e históricas.</p><p>💡 **Nota del Experto:** El Mausoleo tiene un código de vestimenta estricto (hombros y rodillas cubiertas). Las colas pueden ser largas, es mejor ir temprano.</p><p>💰 **Coste Estimado:** 33.85€</p></div></div>
+                <div class="timeline-item" data-day="3"><h3 class="font-bold text-xl mb-2">Día 3: Hanoi - Arte y Vida Local</h3><p class="text-gray-600 mb-4">Mañana en el Museo de Etnología para entender la diversidad cultural de Vietnam. Tarde libre para explorar el Old Quarter a fondo o asistir a un espectáculo de Marionetas de Agua.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🎭 **Actividades:** Museo de Etnología, Marionetas de Agua.</p><p>💡 **Nota del Experto:** El Museo de Etnología es fundamental para contextualizar el trekking en Sapa y entender a las minorías.</p><p>💰 **Coste Estimado:** 31.60€</p></div></div>
+                <div class="timeline-item" data-day="4"><h3 class="font-bold text-xl mb-2">Día 4: Viaje a Sapa</h3><p class="text-gray-600 mb-4">Mañana libre en Hanoi para compras de última hora. Por la noche, traslado a la estación de tren para tomar el tren nocturno hacia Lao Cai, la puerta de entrada a Sapa.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Tren nocturno King Express SP3 (Hanoi -> Lao Cai).</p><p>💡 **Nota del Experto:** Reservar el tren con antelación. Es una experiencia clásica y permite ahorrar una noche de alojamiento.</p><p>💰 **Coste Estimado:** 52.00€</p></div></div>
+                <div class="timeline-item" data-day="5"><h3 class="font-bold text-xl mb-2">Día 5: Sapa - Trekking (Día 1)</h3><p class="text-gray-600 mb-4">Llegada a Lao Cai y traslado a Sapa. Encuentro con el guía local e inicio del trekking de 2 días. El primer día cubre valles, arrozales y aldeas H'mong, culminando en un homestay.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🤝 **Operador Clave:** **Sapa Sisters** o **ETHOS** por su enfoque ético y rutas no turísticas.</p><p>🏨 **Alojamiento:** Homestay en una aldea H'mong/Dao Rojo.</p><p>💡 **Nota del Experto:** El trekking es exigente. Es crucial llevar buen calzado y una mochila pequeña con solo lo esencial para la noche.</p><p>💰 **Coste Estimado:** 54.50€ (incluye 27.50€ de la actividad de ocio).</p></div></div>
+                <div class="timeline-item" data-day="6"><h3 class="font-bold text-xl mb-2">Día 6: Sapa - Trekking (Día 2) y Regreso</h3><p class="text-gray-600 mb-4">Segundo día de trekking a través de más paisajes espectaculares y aldeas. Regreso a Sapa por la tarde para descansar y disfrutar de una cena local.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>⛰️ **Actividad:** Continuación del trekking.</p><p>💡 **Nota del Experto:** Es un buen momento para comprar artesanía directamente de las mujeres de las aldeas.</p><p>💰 **Coste Estimado:** 55.50€ (incluye 27.50€ de la actividad de ocio).</p></div></div>
+            </div>
+
+            <!-- SEMANA 2 -->
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-sky-500 pb-3 text-sky-700 mt-16">Semana 2: Corazón de Vietnam</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-day="7"><h3 class="font-bold text-xl mb-2">Día 7: Viaje a Ninh Binh</h3><p class="text-gray-600 mb-4">Viaje en autobús-cama directamente desde Sapa a Ninh Binh, evitando el regreso a Hanoi. Llegada por la tarde y check-in en el alojamiento.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Autobús-cama Sapa - Ninh Binh.</p><p>💡 **Nota del Experto:** Este trayecto directo es una optimización logística clave que ahorra un día completo de viaje.</p><p>💰 **Coste Estimado:** 42.00€</p></div></div>
+                <div class="timeline-item" data-day="8"><h3 class="font-bold text-xl mb-2">Día 8: Ninh Binh - Trang An y Mua Cave</h3><p class="text-gray-600 mb-4">Día de exploración en bicicleta. Paseo en barca por el complejo de Trang An. Por la tarde, subida a la Mua Cave para disfrutar de las vistas panorámicas al atardecer.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🛶 **Actividades:** Paseo en barca, ciclismo, Mua Cave.</p><p>🍜 **Gastronomía:** Probar la especialidad local, carne de cabra (dê núi).</p><p>💰 **Coste Estimado:** 40.25€</p></div></div>
+                <div class="timeline-item" data-day="9"><h3 class="font-bold text-xl mb-2">Día 9: Ninh Binh - Tam Coc y Bich Dong</h3><p class="text-gray-600 mb-4">Exploración de la zona de Tam Coc, a menudo más tranquila que Trang An. Visita a la pagoda de Bich Dong. Tarde libre para pasear en bicicleta por los arrozales. Por la noche, tren nocturno a Hue.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Tren nocturno SE19 (Ninh Binh -> Hue).</p><p>💡 **Nota del Experto:** Alquilar una bicicleta es la mejor manera de moverse entre los diferentes puntos de interés de Ninh Binh.</p><p>💰 **Coste Estimado:** 42.95€</p></div></div>
+                <div class="timeline-item" data-day="10"><h3 class="font-bold text-xl mb-2">Día 10: Llegada a Hue</h3><p class="text-gray-600 mb-4">Llegada a Hue por la mañana. Check-in y día de exploración de la Ciudadela Imperial, un vasto complejo de palacios y templos.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🏛️ **Actividad:** Visita a la Ciudadela Imperial.</p><p>🍜 **Gastronomía:** Probar el Bún Bò Huế, la sopa de fideos picante originaria de la ciudad.</p><p>💰 **Coste Estimado:** 57.00€</p></div></div>
+                <div class="timeline-item" data-day="11"><h3 class="font-bold text-xl mb-2">Día 11: Hue - Tumbas Imperiales</h3><p class="text-gray-600 mb-4">Día dedicado a visitar las Tumbas Reales de los emperadores Nguyen, como las de Tu Duc, Khai Dinh y Minh Mang, ubicadas a las afueras de la ciudad.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>💡 **Nota del Experto:** Se puede alquilar una moto con conductor o un Grab para hacer un recorrido eficiente por las tumbas, que están dispersas.</p><p>💰 **Coste Estimado:** 35.40€</p></div></div>
+                <div class="timeline-item" data-day="12"><h3 class="font-bold text-xl mb-2">Día 12: Hue - Día Libre o DMZ</h3><p class="text-gray-600 mb-4">Día libre para explorar Hue a un ritmo más pausado, o tomar la excursión opcional de día completo a la Zona Desmilitarizada (DMZ).</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🤝 **Operador Clave (DMZ):** **Hura Cars** para tour privado o guías como **Hoa** o **Quo** para grupos pequeños.</p><p>💡 **Nota del Experto:** El tour a la DMZ es largo e intenso, pero muy recomendable para los interesados en la historia de la guerra.</p><p>💰 **Coste Estimado:** 44.65€ (esencial) + 38€ (opcional DMZ).</p></div></div>
+                <div class="timeline-item" data-day="13"><h3 class="font-bold text-xl mb-2">Día 13: Viaje a Hoi An</h3><p class="text-gray-600 mb-4">Viaje en autobús o coche privado de Hue a Hoi An, cruzando el espectacular Paso de Hai Van. Llegada y check-in en el alojamiento.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Autobús turístico o coche privado.</p><p>💡 **Nota del Experto:** El viaje por el Paso de Hai Van es una experiencia en sí misma, con paradas para fotos.</p><p>💰 **Coste Estimado:** 31.65€</p></div></div>
+            </div>
+
+            <!-- SEMANA 3 -->
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-sky-500 pb-3 text-sky-700 mt-16">Semana 3: Magia Central y Celebración del Tết</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-day="14"><h3 class="font-bold text-xl mb-2">Día 14-21: Semana del Tết en Hoi An</h3><p class="text-gray-600 mb-4">Estancia prolongada en Hoi An para vivir la celebración del Año Nuevo Lunar (17 de febrero). Días dedicados a explorar la Ciudad Antigua, relajarse en la playa de An Bang, visitar el Santuario de My Son, tomar una clase de cocina y sumergirse en la atmósfera festiva del Festival de Farolillos.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🏮 **Hito Clave:** Vivir el Tết y el Festival de Farolillos.</p><p>🍳 **Actividad Recomendada:** Clase de cocina con **Green Bamboo** o **Hoi An Eco Cooking Class**.</p><p>🏛️ **Excursión:** Día de visita al Santuario de My Son, capital religiosa del Reino Champa.</p><p>💡 **Nota del Experto:** Esta semana es el corazón cultural del viaje. La estrategia es no moverse para evitar el caos del transporte nacional.</p><p>💰 **Coste Estimado (promedio diario):** 35.50€ (esencial) + costes de actividades opcionales.</p></div></div>
+            </div>
+            
+            <!-- SEMANA 4 -->
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-sky-500 pb-3 text-sky-700 mt-16">Semana 4: El Pulso del Sur</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-day="22"><h3 class="font-bold text-xl mb-2">Día 22: Vuelo a Ho Chi Minh City</h3><p class="text-gray-600 mb-4">Traslado al aeropuerto de Da Nang (DAD) para tomar un vuelo a Ho Chi Minh City (SGN). Llegada y check-in. Primera exploración de la metrópolis sureña.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>✈️ **Transporte:** Vuelo Da Nang -> HCMC.</p><p>💡 **Nota del Experto:** Reservar el vuelo con antelación, ya que los precios suben después del Tết.</p><p>💰 **Coste Estimado:** 66.00€</p></div></div>
+                <div class="timeline-item" data-day="23"><h3 class="font-bold text-xl mb-2">Día 23: HCMC - Historia de la Guerra</h3><p class="text-gray-600 mb-4">Visita al Museo de los Vestigios de la Guerra y al Palacio de la Reunificación para comprender la historia del siglo XX en Vietnam.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🏛️ **Actividades:** Visitas a museos y sitios históricos.</p><p>🍜 **Gastronomía:** Probar el Cơm Tấm (arroz roto) y el Bánh xèo (crepa crujiente).</p><p>💰 **Coste Estimado:** 34.85€</p></div></div>
+                <div class="timeline-item" data-day="24"><h3 class="font-bold text-xl mb-2">Día 24: HCMC - Túneles de Cu Chi</h3><p class="text-gray-600 mb-4">Excursión de medio día a los Túneles de Cu Chi, la impresionante red de túneles utilizada por el Viet Cong durante la guerra.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>💡 **Nota del Experto:** Es una experiencia muy popular. Ir con un tour organizado facilita la logística.</p><p>💰 **Coste Estimado:** 40.00€ (incluye 10€ de la actividad de ocio).</p></div></div>
+                <div class="timeline-item" data-day="25"><h3 class="font-bold text-xl mb-2">Día 25: Viaje al Delta del Mekong</h3><p class="text-gray-600 mb-4">Viaje en autobús a Can Tho, el corazón del Delta del Mekong. Tarde para explorar la ciudad y su paseo ribereño.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Autobús HCMC -> Can Tho.</p><p>💰 **Coste Estimado:** 36.00€</p></div></div>
+                <div class="timeline-item" data-day="26"><h3 class="font-bold text-xl mb-2">Día 26: Delta del Mekong - Mercados Flotantes</h3><p class="text-gray-600 mb-4">Excursión en barca al amanecer para visitar el mercado flotante de Cai Rang, el más grande del delta. Paseo por los canales para ver la vida local.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🛶 **Actividad Clave:** Mercado Flotante de Cai Rang.</p><p>🏨 **Alojamiento:** Homestay en el delta para una experiencia más auténtica.</p><p>💰 **Coste Estimado:** 45.00€ (incluye 15€ de la actividad de ocio).</p></div></div>
+            </div>
+
+            <!-- SEMANA 5 -->
+            <h2 class="text-3xl font-bold mb-8 border-b-2 border-sky-500 pb-3 text-sky-700 mt-16">Semana 5: La Grandeza de Angkor</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-day="29"><h3 class="font-bold text-xl mb-2">Día 29: Viaje a Siem Reap (Camboya)</h3><p class="text-gray-600 mb-4">Viaje en autobús desde Can Tho a Siem Reap, cruzando la frontera. Trámite de visado a la llegada. Check-in y primera noche en Camboya.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🚌 **Transporte:** Autobús Can Tho -> Siem Reap.</p><p>🛂 **Visado:** Visa on arrival en la frontera de Camboya.</p><p>💰 **Coste Estimado:** 50.00€</p></div></div>
+                <div class="timeline-item" data-day="30"><h3 class="font-bold text-xl mb-2">Día 30: Siem Reap - Angkor Wat</h3><p class="text-gray-600 mb-4">Día dedicado por completo a explorar el templo más grande y famoso del mundo: Angkor Wat. Se recomienda ir al amanecer para una experiencia inolvidable.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🌅 **Hito Clave:** Amanecer en Angkor Wat.</p><p>💡 **Nota del Experto:** Contratar un tuk-tuk para todo el día es la forma más eficiente de moverse por el vasto complejo.</p><p>💰 **Coste Estimado:** 50.00€</p></div></div>
+                <div class="timeline-item" data-day="31"><h3 class="font-bold text-xl mb-2">Día 31: Siem Reap - Angkor Thom y Templos</h3><p class="text-gray-600 mb-4">Exploración de la ciudad amurallada de Angkor Thom, incluyendo el enigmático Templo de Bayon con sus caras sonrientes, y el famoso "templo de la jungla", Ta Prohm.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🏛️ **Actividades:** Angkor Thom, Bayon, Ta Prohm.</p><p>💰 **Coste Estimado:** 40.00€</p></div></div>
+                <div class="timeline-item" data-day="32"><h3 class="font-bold text-xl mb-2">Día 32: Siem Reap - Día Libre</h3><p class="text-gray-600 mb-4">Día libre para explorar la ciudad de Siem Reap, sus mercados, o visitar templos más lejanos como Banteay Srei. Por la noche, espectáculo del Phare Circus.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>🎪 **Actividad Recomendada:** Espectáculo del Phare Circus.</p><p>💰 **Coste Estimado:** 45.00€ (incluye 15€ de la actividad de ocio).</p></div></div>
+                <div class="timeline-item" data-day="33"><h3 class="font-bold text-xl mb-2">Día 33-34: Días Flexibles</h3><p class="text-gray-600 mb-4">Días de reserva para imprevistos, explorar más a fondo algún lugar, o simplemente descansar antes del final del viaje.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>💡 **Nota del Experto:** Estos días son tu colchón de seguridad. Úsalos para lo que más te apetezca en el momento.</p><p>💰 **Coste Estimado (diario):** 30.00€</p></div></div>
+                <div class="timeline-item" data-day="35"><h3 class="font-bold text-xl mb-2">Día 35: Fin de la Expedición</h3><p class="text-gray-600 mb-4">Traslado al Aeropuerto Internacional de Siem Reap (SAI) para el vuelo de regreso.</p><div class="bg-white rounded-lg p-4 border space-y-3"><p>✈️ **Transporte:** Tuk-tuk o Grab al aeropuerto.</p><p>💰 **Coste Estimado:** 15.00€</p></div></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2024 Plan de Expedición Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

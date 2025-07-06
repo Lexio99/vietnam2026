@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Cultural - Expedición Vietnam y Camboya 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            overflow: hidden;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #0ea5e9; /* sky-500 */
+        }
+        .sub-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        /* Estilos para la línea de tiempo horizontal */
+        .timeline-container {
+            position: relative;
+            width: 100%;
+            overflow-x: auto;
+            padding: 2rem 0;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .timeline-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+        .timeline-wrapper {
+            display: inline-flex;
+            min-width: 100%;
+            padding: 4rem 2rem; /* Aumentado padding vertical para dar espacio */
+            position: relative;
+            align-items: center;
+        }
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 4px;
+            background-color: #cbd5e1;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 240px;
+            padding: 0 1.2rem;
+        }
+        .timeline-item .content {
+            text-align: center;
+            width: 220px;
+            position: absolute; /* Posicionamiento absoluto para el contenido */
+        }
+        .timeline-item:nth-child(even) .content {
+             top: 50%;
+             margin-top: 20px; /* Espacio desde la línea */
+        }
+        .timeline-item:nth-child(odd) .content {
+            bottom: 50%;
+            margin-bottom: 20px; /* Espacio desde la línea */
+        }
+        .timeline-item .year {
+            font-weight: 700;
+            font-size: 1.125rem;
+            color: #0369a1;
+        }
+        .timeline-item .event {
+            font-size: 0.875rem;
+            color: #475569;
+        }
+    </style>
+</head>
+<body class="text-gray-900 antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">Expedición 2026</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 font-medium">Inicio</a>
+                <a href="itinerario.html" class="nav-link text-gray-600 font-medium">Itinerario</a>
+                <a href="destinos.html" class="nav-link text-gray-600 font-medium">Destinos</a>
+                <a href="presupuesto.html" class="nav-link text-gray-600 font-medium">Presupuesto</a>
+                <a href="cultura.html" class="text-sky-600 font-bold">Guía Cultural</a>
+                <a href="logistica.html" class="nav-link text-gray-600 font-medium">Logística</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 border-t">
+             <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
+             <a href="itinerario.html" class="block py-2 text-gray-600">Itinerario</a>
+             <a href="destinos.html" class="block py-2 text-gray-600">Destinos</a>
+             <a href="presupuesto.html" class="block py-2 text-gray-600">Presupuesto</a>
+             <a href="cultura.html" class="block py-2 text-sky-600 font-semibold">Guía Cultural</a>
+             <a href="logistica.html" class="block py-2 text-gray-600">Logística</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-16">
+        <h1 class="section-title text-center mb-4">Guía Cultural y Gastronómica</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">El contexto que transforma el viaje. Entiende la historia, las tradiciones y la gastronomía que definen Vietnam y Camboya para una experiencia más rica y profunda.</p>
+
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Línea de Tiempo Histórica: Hitos de Vietnam y Camboya</h2>
+            <div class="timeline-container">
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item"><div class="content"><p class="year">~2000 a.C.</p><p class="event">Surge el cultivo de arroz en el Río Rojo, cuna de la civilización vietnamita.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">S. II a.C.</p><p class="event">Inicio de la dominación china (+1000 años).</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">40 d.C.</p><p class="event">Rebelión de las Hermanas Trung contra el dominio chino.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">S. IV-XIII</p><p class="event">Auge del Reino de Champa en la costa central.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">802 d.C.</p><p class="event">Jayavarman II funda el Imperio Jemer en Camboya.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">S. X</p><p class="event">Vietnam logra la independencia de China.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1070</p><p class="event">Fundación del Templo de la Literatura en Hanoi.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">S. XII</p><p class="event">Construcción de Angkor Wat en Camboya bajo Suryavarman II.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1418-1427</p><p class="event">Revuelta de Lam Son liderada por Le Loi contra la dinastía Ming.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1802</p><p class="event">Dinastía Nguyen unifica Vietnam, capital en Hue.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1887</p><p class="event">Establecimiento de la Indochina Francesa.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1945</p><p class="event">Ho Chi Minh declara la independencia de Vietnam.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1954</p><p class="event">Derrota francesa en Dien Bien Phu. División del país.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1968</p><p class="event">Ofensiva del Tết y Masacre de My Lai.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1975</p><p class="event">Caída de Saigón y reunificación de Vietnam. El Jemer Rojo toma el poder en Camboya.</p></div></div>
+                    <div class="timeline-item"><div class="content"><p class="year">1978</p><p class="event">Invasión vietnamita de Camboya tras masacres fronterizas.</p></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Desarrollo de Hitos Históricos Clave</h2>
+            <div class="space-y-8">
+                <div><h3 class="font-semibold text-xl mb-2">~2000 a.C.: El Origen en el Río Rojo</h3><p class="text-gray-700">La civilización vietnamita tiene sus raíces en el fértil Delta del Río Rojo. Es aquí donde, durante la Edad del Bronce, floreció la cultura Dong Son, caracterizada por su dominio en el cultivo de arroz y la creación de los famosos tambores de bronce, sentando las bases de la identidad cultural del pueblo vietnamita.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">40 d.C.: La Rebelión de las Hermanas Trung</h3><p class="text-gray-700">En un acto de desafío legendario contra mil años de dominación china, las hermanas Trung Trac y Trung Nhi lideraron una exitosa rebelión. Aunque su reinado fue breve, se convirtieron en el símbolo eterno de la resistencia y el espíritu indomable de Vietnam, veneradas como heroínas nacionales hasta el día de hoy.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">S. IV-XIII: El Reino de Champa</h3><p class="text-gray-700">Mientras el norte estaba bajo influencia china, la costa central de Vietnam fue el hogar del Reino de Champa. Esta civilización, influenciada por la India, adoptó el hinduismo y dejó un legado arquitectónico impresionante, cuyo máximo exponente es el Santuario de My Son, un complejo de templos de ladrillo dedicados al dios Shiva.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">802 - S.XV: El Imperio Jemer y Angkor</h3><p class="text-gray-700">El Imperio Jemer fue una de las civilizaciones más poderosas del Sudeste Asiático, con su capital en Angkor. Su obra cumbre, Angkor Wat, construido en el siglo XII, es el monumento religioso más grande del mundo y una representación terrenal del Monte Meru, el hogar de los dioses hindúes. La ciudad amurallada de Angkor Thom, con el enigmático Templo de Bayon en su centro, representa el cénit del poder del rey Jayavarman VII.</p></div>
+                 <div><h3 class="font-semibold text-xl mb-2">1802-1945: La Dinastía Nguyen en Hue</h3><p class="text-gray-700">La última dinastía imperial de Vietnam estableció su capital en Hue, construyendo una vasta Ciudadela inspirada en la Ciudad Prohibida de Pekín pero adaptada a la cosmología local. Su legado es una arquitectura monumental que buscaba la armonía con la naturaleza (Feng Shui) y reflejaba el orden confuciano. Las Tumbas Reales, dispersas por el paisaje, no eran meros mausoleos, sino complejos palaciegos para la vida después de la muerte.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">1954: La Derrota Francesa en Dien Bien Phu</h3><p class="text-gray-700">Esta batalla marcó el fin de la Indochina Francesa. Las fuerzas del Viet Minh, bajo el mando del General Vo Nguyen Giap, lograron una victoria decisiva contra una guarnición francesa bien atrincherada, transportando artillería pesada a través de la jungla en un alarde logístico. La caída de Dien Bien Phu forzó a Francia a negociar su retirada en los Acuerdos de Ginebra y provocó la división del país en Norte y Sur.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">1968: La Ofensiva del Tết y la Masacre de My Lai</h3><p class="text-gray-700">Este ataque sorpresa coordinado por Vietnam del Norte y el Viet Cong durante el Año Nuevo Lunar demostró su capacidad militar y cambió drásticamente la percepción pública de la guerra en Estados Unidos. El mismo año, la masacre de civiles desarmados en la aldea de Son My (My Lai) por tropas estadounidenses conmocionó al mundo y alimentó el movimiento contra la guerra.</p></div>
+                <div><h3 class="font-semibold text-xl mb-2">1975-1978: Caída de Saigón y el Genocidio Camboyano</h3><p class="text-gray-700">El 30 de abril de 1975, los tanques norvietnamitas derribaron las puertas del Palacio Presidencial en Saigón, reunificando Vietnam. Simultáneamente, en Camboya, el régimen del Jemer Rojo liderado por Pol Pot tomó el poder, iniciando un brutal genocidio que costaría la vida a casi dos millones de personas. Las incursiones del Jemer Rojo en territorio vietnamita en 1978 provocaron la invasión vietnamita de Camboya, que puso fin al régimen genocida.</p></div>
+            </div>
+        </div>
+
+        <div id="tet" class="card p-6 md:p-8 mb-16 bg-red-50 border border-red-200">
+            <h2 class="sub-section-title text-red-900">Guía del Tết: Celebrando el Año Nuevo Lunar</h2>
+            <p class="text-red-800 mb-6">El Tết (17 de Febrero de 2026) es la festividad más importante de Vietnam. Entender sus símbolos te permitirá participar y no solo observar. Es un momento de renovación, reunión familiar y respeto a los ancestros.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-semibold text-xl mb-2">Tradiciones y Símbolos</h3>
+                    <ul class="space-y-4 text-sm text-gray-700">
+                        <li><strong>Bánh chưng y Bánh tét:</strong> Pasteles cuadrados (norte) o cilíndricos (sur) de arroz glutinoso que simbolizan la Tierra y el Cielo. Son una ofrenda esencial a los ancestros y un pilar de los banquetes familiares.</li>
+                        <li><strong>Árboles de Kumquat y Flores de Melocotonero:</strong> El kumquat, con sus frutos dorados, representa la riqueza y la fertilidad. Las ramas de melocotonero en flor, típicas del norte, ahuyentan a los malos espíritus y traen buena suerte.</li>
+                        <li><strong>Lì xì (Sobres Rojos):</strong> Los mayores entregan a los niños sobres rojos con dinero nuevo, un acto que simboliza la transmisión de suerte, salud y buenos deseos para el nuevo año.</li>
+                        <li><strong>Limpieza y Decoración:</strong> Las casas se limpian a fondo antes del Tết para barrer la mala suerte del año viejo. Se decoran con caligrafía, banderolas rojas y bandejas de cinco frutas (Mâm Ngũ Quả).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-2">Consejos para el Viajero</h3>
+                     <ul class="space-y-4 text-sm text-gray-700">
+                         <li><strong>Estrategia Clave:</strong> Permanece estacionario en Hoi An durante la semana principal del Tết (aprox. 15-21 de Feb) para evitar el colapso casi total del transporte.</li>
+                         <li><strong>Qué Esperar:</strong> Muchas tiendas y restaurantes cerrarán, especialmente en los primeros días. Las grandes ciudades se vuelven notablemente tranquilas. Los templos y pagodas, sin embargo, estarán llenos de vida.</li>
+                         <li><strong>Etiqueta:</strong> Viste de forma respetuosa. Saluda con "Chúc Mừng Năm Mới!" (¡Feliz Año Nuevo!). No regatees de forma agresiva y muestra paciencia, ya que es un momento sagrado para las familias.</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Guía de Arte y Arquitectura</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <h3 class="font-semibold text-xl mb-3">Arquitectura: Cómo Leer los Edificios</h3>
+                    <div class="space-y-4">
+                        <div><h4 class="font-bold">Imperial (Hue)</h4><p class="text-sm text-gray-700">Se caracteriza por sus recintos amurallados, fosos y una disposición simétrica basada en el Feng Shui. Las tejas vidriadas de color amarillo o azul y los elaborados relieves de dragones y fénix indican estatus real. Diseñada para inspirar asombro y legitimar el poder divino del emperador.</p></div>
+                        <div><h4 class="font-bold">Colonial Francés (Hanoi, HCMC)</h4><p class="text-sm text-gray-700">Busca grandes bulevares, villas con fachadas amarillas, techos de mansarda y balcones de hierro forjado. Ejemplos icónicos son la Ópera de Hanoi y la Oficina de Correos de Saigón. Un estilo que impone la grandeza europea adaptada al trópico.</p></div>
+                        <div><h4 class="font-bold">Champa (My Son)</h4><p class="text-sm text-gray-700">Torres-santuario (kalan) de ladrillo rojo con forma piramidal, dedicadas a deidades hindúes como Shiva. Destacan por sus finas tallas en piedra y una sofisticada técnica de albañilería que aún hoy asombra.</p></div>
+                        <div><h4 class="font-bold">Casas Tubo (Nhà ống)</h4><p class="text-sm text-gray-700">Típicas de los cascos antiguos. Tienen fachadas muy estrechas pero son muy profundas y con múltiples pisos, a menudo con patios interiores (giếng trời) para luz y ventilación. Un testimonio del ingenio vietnamita ante la densidad urbana.</p></div>
+                        <div><h4 class="font-bold">Casas Comunales (Nhà Rông)</h4><p class="text-sm text-gray-700">Propias de las etnias de las Tierras Altas Centrales (ej. Bahnar). Son imponentes estructuras de madera sobre pilotes con un altísimo techo de paja, que funcionan como centro de la vida comunitaria y espiritual del pueblo.</p></div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl mb-3">Artesanía y Cultura</h3>
+                    <div class="space-y-4">
+                        <div><h4 class="font-bold">Marionetas de Agua</h4><p class="text-sm text-gray-700">Una forma de arte tradicional única del Delta del Río Rojo, donde los titiriteros manejan las marionetas desde detrás de una pantalla, sumergidos en el agua.</p></div>
+                        <div><h4 class="font-bold">Artesanías</h4><p class="text-sm text-gray-700">El país tiene una rica tradición artesanal. Destacan la cerámica y alfarería (como en Bat Trang), la laca, los textiles de las minorías étnicas (como los H'mong en Sapa con teñido de índigo) y la fundición de bronce.</p></div>
+                        <div><h4 class="font-bold">Música y Cine</h4><p class="text-sm text-gray-700">La escena musical contemporánea es vibrante, con el V-Pop de artistas como Sơn Tùng M-TP y una creciente escena indie. El cine también ha ganado reconocimiento internacional con películas que exploran la identidad vietnamita más allá de la guerra.</p></div>
+                        <div><h4 class="font-bold">Circo Phare (Camboya)</h4><p class="text-sm text-gray-700">En Siem Reap, esta aclamada compañía de circo social utiliza acrobacias, teatro y música para contar historias camboyanas, apoyando a jóvenes de entornos desfavorecidos.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-6 md:p-8">
+            <h2 class="sub-section-title">Guía Gastronómica: Un Viaje por los Sabores de Vietnam y Camboya</h2>
+            <p class="text-gray-600 mb-6">La cocina es un pilar cultural, caracterizada por su frescura, equilibrio de sabores y diversidad regional. Cada zona ofrece una paleta de sabores única que cuenta la historia de su tierra.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">Norte (Hanoi, Sapa, Ninh Binh)</h3>
+                    <p class="text-sm text-gray-700 mb-4">Sabores refinados, equilibrados y menos picantes, con influencia china.</p>
+                    <ul class="list-disc list-inside text-sm font-semibold space-y-2">
+                        <li><strong>Phở Bò:</strong> Sopa de fideos de ternera, el plato nacional.</li>
+                        <li><strong>Bún Chả:</strong> Cerdo a la parrilla con fideos de arroz, hierbas y salsa agridulce.</li>
+                        <li><strong>Chả Cá Lã Vọng:</strong> Pescado a la parrilla con eneldo y cúrcuma.</li>
+                        <li><strong>Bún Riêu Cua:</strong> Sopa de fideos de cangrejo con tomate.</li>
+                        <li><strong>Cơm Cháy (Ninh Binh):</strong> Arroz crujiente servido con guiso de cerdo.</li>
+                        <li><strong>Thắng Cố (Sapa):</strong> Estofado tradicional de las etnias de montaña.</li>
+                        <li><strong>Cà Phê Trứng:</strong> El icónico y cremoso café con huevo.</li>
+                        <li><strong>Bia Hơi:</strong> Cerveza de barril fresca, ligera y muy barata.</li>
+                    </ul>
+                </div>
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">Centro (Hue, Hoi An, Da Nang)</h3>
+                    <p class="text-sm text-gray-700 mb-4">Cocina compleja y especiada, a menudo picante, con una presentación elaborada herencia de la corte imperial.</p>
+                    <ul class="list-disc list-inside text-sm font-semibold space-y-2">
+                        <li><strong>Bún Bò Huế:</strong> Famosa sopa de fideos picante de Hue, con citronela y ternera.</li>
+                        <li><strong>Bánh Bèo, Nậm, Lọc:</strong> Delicados pastelitos de arroz al vapor, servidos en pequeños platos.</li>
+                        <li><strong>Cao Lầu:</strong> Fideos gruesos exclusivos de Hoi An, con cerdo y chicharrones.</li>
+                        <li><strong>Mì Quảng:</strong> Fideos anchos de cúrcuma con muy poco caldo, cerdo y gambas.</li>
+                        <li><strong>Cơm Gà:</strong> Arroz con pollo al estilo de Hoi An, con arroz teñido de cúrcuma.</li>
+                        <li><strong>White Rose Dumplings:</strong> Dumplings de gambas con forma de rosa.</li>
+                        <li><strong>Bánh Khoái:</strong> Crepa crujiente y gruesa, especialidad de Hue.</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-2">Sur (HCMC, Mekong) y Camboya</h3>
+                    <p class="text-sm text-gray-700 mb-4">Sabores más dulces, tropicales y audaces, con uso de coco y hierbas frescas.</p>
+                    <ul class="list-disc list-inside text-sm font-semibold space-y-2">
+                        <li><strong>Cơm Tấm:</strong> Arroz "roto" con costillas de cerdo a la parrilla, un clásico de Saigón.</li>
+                        <li><strong>Bánh Xèo:</strong> Crepa vietnamita gigante y crujiente rellena de cerdo y gambas.</li>
+                        <li><strong>Hủ Tiếu Nam Vang:</strong> Sopa de fideos de cerdo con influencias camboyanas.</li>
+                        <li><strong>Gỏi Cuốn:</strong> Rollitos de verano frescos (no fritos) con gambas.</li>
+                        <li><strong>Cá Tai Tượng (Mekong):</strong> Pescado "oreja de elefante" frito.</li>
+                        <li><strong>Bánh Mì:</strong> El famoso bocadillo vietnamita en baguette.</li>
+                        <li><strong>Amok de Pescado (Camboya):</strong> El plato nacional camboyano, un suave curry al vapor.</li>
+                        <li><strong>Cà Phê Sữa Đá:</strong> Café solo y fuerte con hielo y leche condensada.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2024 Plan de Expedición Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

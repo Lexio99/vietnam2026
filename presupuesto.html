@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto del Viaje - Expedición Vietnam y Camboya 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            font-weight: 800;
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            overflow: hidden;
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #0ea5e9; /* sky-500 */
+        }
+        .sub-section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-900 antialiased">
+
+    <!-- Header y Navegación (sería igual en todas las páginas) -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">Expedición 2026</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="index.html" class="nav-link text-gray-600 font-medium">Inicio</a>
+                <a href="itinerario.html" class="nav-link text-gray-600 font-medium">Itinerario</a>
+                <a href="destinos.html" class="nav-link text-gray-600 font-medium">Destinos</a>
+                <a href="presupuesto.html" class="text-sky-600 font-bold">Presupuesto</a>
+                <a href="cultura.html" class="nav-link text-gray-600 font-medium">Guía Cultural</a>
+                <a href="logistica.html" class="nav-link text-gray-600 font-medium">Logística</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 border-t">
+             <a href="index.html" class="block py-2 text-gray-600">Inicio</a>
+             <a href="itinerario.html" class="block py-2 text-gray-600">Itinerario</a>
+             <a href="destinos.html" class="block py-2 text-gray-600">Destinos</a>
+             <a href="presupuesto.html" class="block py-2 text-sky-600 font-semibold">Presupuesto</a>
+             <a href="cultura.html" class="block py-2 text-gray-600">Guía Cultural</a>
+             <a href="logistica.html" class="block py-2 text-gray-600">Logística</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-16">
+        <h1 class="section-title text-center mb-4">Análisis Financiero</h1>
+        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">Una guía completa y detallada del presupuesto del viaje, con un desglose de todos los costes para una planificación y control financiero total.</p>
+
+        <!-- Filosofía del Presupuesto -->
+        <div class="card p-6 md:p-8 mb-16 bg-gray-50">
+            <h2 class="sub-section-title">Filosofía y Estrategia Financiera</h2>
+            <p class="text-gray-700">Este plan se basa en la separación de los costes fijos e inevitables de los costes variables y opcionales. Este enfoque te otorga el control total, permitiéndote adaptar el viaje a tu presupuesto, energía e intereses en tiempo real. El objetivo es proporcionar una hoja de ruta financiera precisa que te permita viajar con confianza y flexibilidad.</p>
+        </div>
+
+        <!-- Resumen General del Presupuesto -->
+        <div class="card p-6 md:p-8 mb-16">
+            <h2 class="sub-section-title">Resumen General del Presupuesto</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-600 mb-2 font-semibold">PRESUPUESTO FINAL RECOMENDADO</p>
+                    <p class="text-6xl font-extrabold text-sky-600 mb-4">2.068,56 €</p>
+                    <p class="text-gray-700">Este total incluye el coste esencial, un fondo para ocio y un **colchón de contingencia del 15%** para máxima flexibilidad.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p class="text-sm text-blue-800 font-semibold">Presupuesto Esencial</p>
+                        <p class="text-2xl font-bold text-blue-900">1.573,75 €</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <p class="text-sm text-green-800 font-semibold">Fondo de Ocio</p>
+                        <p class="text-2xl font-bold text-green-900">225,00 €</p>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg col-span-2">
+                        <p class="text-sm text-yellow-800 font-semibold">Fondo de Contingencia (15%)</p>
+                        <p class="text-2xl font-bold text-yellow-900">269,81 €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desglose Detallado -->
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Columna Izquierda: Presupuesto Esencial -->
+            <div class="card p-6 md:p-8">
+                <h2 class="sub-section-title">Presupuesto Esencial: 1.573,75 €</h2>
+                <p class="text-gray-600 mb-6">La columna vertebral financiera del viaje. Cubre todos los gastos no negociables para completar la expedición de 35 días.</p>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-lg">Alojamiento: 315,00 €</h4>
+                        <p class="text-sm text-gray-600">Cubre 34 noches con un promedio de 9,25 €/noche, basado en hostels y homestays bien valorados para maximizar la inmersión cultural y optimizar costes.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Transporte: 398,15 €</h4>
+                        <p class="text-sm text-gray-600">Incluye todos los traslados interurbanos (trenes nocturnos para ahorrar alojamiento, autobuses-cama, 1 vuelo doméstico clave) y un fondo para transporte local (Grab/moto-taxi).</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Comida y Bebida: 700,00 €</h4>
+                        <p class="text-sm text-gray-600">Presupuesto diario de 20 €, suficiente para disfrutar de 3 comidas al día, alternando entre comida callejera y restaurantes locales, además de bebidas.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-lg">Entradas y Visados: 160,60 €</h4>
+                        <p class="text-sm text-gray-600">Cubre la e-visa de Vietnam, el visado de Camboya, y las entradas a todos los sitios clave del itinerario, excepto el pase de Angkor (incluido en Ocio).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Ocio, Contingencia y Consejos -->
+            <div class="space-y-12">
+                <div class="card p-6 md:p-8">
+                    <h2 class="sub-section-title">Fondo de Ocio: 225,00 €</h2>
+                    <p class="text-gray-600 mb-6">Una partida flexible para las grandes experiencias y tours organizados. Estas actividades son opcionales y pueden ajustarse para controlar el gasto.</p>
+                    <table class="w-full text-left text-sm">
+                        <thead>
+                            <tr class="border-b">
+                                <th class="py-2">Actividad</th>
+                                <th class="py-2 text-right">Coste (€)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b"><td class="py-2">Trekking 2D/1N en Sapa</td><td class="py-2 font-semibold text-right">55,00</td></tr>
+                            <tr class="border-b"><td class="py-2">Tour a la DMZ desde Hue</td><td class="py-2 font-semibold text-right">38,00</td></tr>
+                            <tr class="border-b"><td class="py-2">Clase de Cocina en Hoi An</td><td class="py-2 font-semibold text-right">25,00</td></tr>
+                            <tr class="border-b"><td class="py-2">Tour a los Túneles de Cu Chi</td><td class="py-2 font-semibold text-right">10,00</td></tr>
+                            <tr class="border-b"><td class="py-2">Tour al Delta del Mekong</td><td class="py-2 font-semibold text-right">15,00</td></tr>
+                            <tr class="border-b"><td class="py-2">Pase de 3 días para Angkor</td><td class="py-2 font-semibold text-right">62,00</td></tr>
+                            <tr><td class="py-2">Espectáculo Phare Circus</td><td class="py-2 font-semibold text-right">18,00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card p-6 md:p-8">
+                    <h2 class="sub-section-title">Contingencia y Consejos</h2>
+                    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                        <h4 class="font-bold text-yellow-900">Fondo de Contingencia: 269,81 €</h4>
+                        <p class="text-sm text-yellow-800 mt-2">Un colchón de seguridad del 15% sobre el gasto total previsto. Es crucial para cubrir imprevistos (transporte perdido, gastos médicos menores, etc.) o para darse un capricho no planificado. **No es un objetivo de gasto.**</p>
+                    </div>
+                    <div class="bg-gray-50 border rounded-lg p-4">
+                        <h4 class="font-bold">Consejos de Gestión de Dinero</h4>
+                        <ul class="list-disc list-inside text-sm mt-2 text-gray-700 space-y-1">
+                            <li><strong>Efectivo es Rey:</strong> Especialmente para comida callejera, mercados y pequeños comercios. Lleva siempre una cantidad razonable de Dong vietnamita (VND).</li>
+                            <li><strong>Tarjetas:</strong> Usa tarjetas de crédito/débito en hoteles, restaurantes más grandes y para reservar vuelos. Informa a tu banco de tu viaje para evitar bloqueos.</li>
+                            <li><strong>Cajeros (ATMs):</strong> Son comunes en las ciudades. Saca cantidades más grandes para minimizar las comisiones por transacción.</li>
+                            <li><strong>Negociación:</strong> El regateo es común en mercados y con conductores de cyclo/moto-taxi sin taxímetro. Hazlo siempre con una sonrisa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabla de Gastos Diarios -->
+        <div class="mt-16">
+            <h2 class="section-title text-center mb-12">Desglose de Gastos por Día</h2>
+            <div class="card p-4 md:p-6">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-3 font-semibold">Día</th>
+                                <th class="p-3 font-semibold">Ubicación</th>
+                                <th class="p-3 font-semibold text-right">Gasto Esencial (€)</th>
+                                <th class="p-3 font-semibold">Actividad de Ocio Opcional</th>
+                                <th class="p-3 font-semibold text-right">Coste Ocio (€)</th>
+                                <th class="p-3 font-semibold text-right">Gasto Total Día (€)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b"><td class="p-3">1</td><td class="p-3">Hanoi</td><td class="p-3 text-right">33.65</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">33.65</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">2</td><td class="p-3">Hanoi</td><td class="p-3 text-right">33.85</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">33.85</td></tr>
+                            <tr class="border-b"><td class="p-3">3</td><td class="p-3">Hanoi</td><td class="p-3 text-right">31.60</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">31.60</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">4</td><td class="p-3">Viaje a Sapa</td><td class="p-3 text-right">52.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">52.00</td></tr>
+                            <tr class="border-b"><td class="p-3">5</td><td class="p-3">Sapa</td><td class="p-3 text-right">27.00</td><td class="p-3">Trekking 2D/1N (Día 1)</td><td class="p-3 text-right">27.50</td><td class="p-3 text-right font-bold">54.50</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">6</td><td class="p-3">Sapa</td><td class="p-3 text-right">28.00</td><td class="p-3">Trekking 2D/1N (Día 2)</td><td class="p-3 text-right">27.50</td><td class="p-3 text-right font-bold">55.50</td></tr>
+                            <tr class="border-b"><td class="p-3">7</td><td class="p-3">Viaje a Ninh Binh</td><td class="p-3 text-right">42.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">42.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">8</td><td class="p-3">Ninh Binh</td><td class="p-3 text-right">40.25</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">40.25</td></tr>
+                            <tr class="border-b"><td class="p-3">9</td><td class="p-3">Ninh Binh</td><td class="p-3 text-right">42.95</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">42.95</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">10</td><td class="p-3">Viaje a Hue</td><td class="p-3 text-right">57.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">57.00</td></tr>
+                            <tr class="border-b"><td class="p-3">11</td><td class="p-3">Hue</td><td class="p-3 text-right">35.40</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">35.40</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">12</td><td class="p-3">Hue</td><td class="p-3 text-right">44.65</td><td class="p-3">Tour a la DMZ</td><td class="p-3 text-right">38.00</td><td class="p-3 text-right font-bold">82.65</td></tr>
+                            <tr class="border-b"><td class="p-3">13</td><td class="p-3">Viaje a Hoi An</td><td class="p-3 text-right">31.65</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">31.65</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">14-21</td><td class="p-3">Hoi An (Tết)</td><td class="p-3 text-right">35.50 (promedio/día)</td><td class="p-3">Clase de Cocina, My Son</td><td class="p-3 text-right">25.00</td><td class="p-3 text-right font-bold">60.50 (día con actividad)</td></tr>
+                            <tr class="border-b"><td class="p-3">22</td><td class="p-3">Viaje a HCMC</td><td class="p-3 text-right">66.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">66.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">23</td><td class="p-3">HCMC</td><td class="p-3 text-right">34.85</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">34.85</td></tr>
+                            <tr class="border-b"><td class="p-3">24</td><td class="p-3">HCMC</td><td class="p-3 text-right">30.00</td><td class="p-3">Tour Túneles de Cu Chi</td><td class="p-3 text-right">10.00</td><td class="p-3 text-right font-bold">40.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">25</td><td class="p-3">Viaje al Mekong</td><td class="p-3 text-right">36.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">36.00</td></tr>
+                            <tr class="border-b"><td class="p-3">26</td><td class="p-3">Delta del Mekong</td><td class="p-3 text-right">30.00</td><td class="p-3">Tour Mercado Flotante</td><td class="p-3 text-right">15.00</td><td class="p-3 text-right font-bold">45.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">27-28</td><td class="p-3">Viaje/Frontera</td><td class="p-3 text-right">30.00 (promedio/día)</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">30.00</td></tr>
+                            <tr class="border-b"><td class="p-3">29</td><td class="p-3">Llegada a Siem Reap</td><td class="p-3 text-right">50.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">50.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">30</td><td class="p-3">Siem Reap</td><td class="p-3 text-right">50.00</td><td class="p-3">Pase Angkor (Día 1)</td><td class="p-3 text-right">62.00 (coste total pase)</td><td class="p-3 text-right font-bold">112.00</td></tr>
+                            <tr class="border-b"><td class="p-3">31</td><td class="p-3">Siem Reap</td><td class="p-3 text-right">40.00</td><td class="p-3">Pase Angkor (Día 2)</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">40.00</td></tr>
+                            <tr class="border-b bg-gray-50"><td class="p-3">32</td><td class="p-3">Siem Reap</td><td class="p-3 text-right">30.00</td><td class="p-3">Pase Angkor (Día 3) + Phare Circus</td><td class="p-3 text-right">18.00</td><td class="p-3 text-right font-bold">48.00</td></tr>
+                            <tr class="border-b"><td class="p-3">33-34</td><td class="p-3">Días Flexibles</td><td class="p-3 text-right">30.00 (promedio/día)</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">30.00</td></tr>
+                            <tr class="bg-gray-50"><td class="p-3">35</td><td class="p-3">Salida</td><td class="p-3 text-right">15.00</td><td class="p-3">-</td><td class="p-3 text-right">0</td><td class="p-3 text-right font-bold">15.00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2024 Plan de Expedición Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
